@@ -13,4 +13,8 @@ public class Player {
     public Hand getHand() {
         return hand;
     }
+
+    public String getName() {
+        return name;
+    }
 }

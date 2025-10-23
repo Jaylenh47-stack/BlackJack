@@ -43,17 +43,10 @@ public class Card {
                 return 8;
             case "9":
                 return 9;
-            case "10":
-                return 10;
-            case "J":
-                return 10;
-            case "Q":
-                return 10;
-            case "K":
+            case "10", "Q", "J", "K":
                 return 10;
             case "A":
-                return 11;
-
+                    return 11;
         }
             // determine point value and return it
             // A = 11
