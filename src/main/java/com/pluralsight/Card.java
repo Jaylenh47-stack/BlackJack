@@ -22,7 +22,7 @@ public class Card {
     }
 
     public String getValue(){
-            return value;
+            return(isFaceUp) ? value : "#";
     }
 
     public int getPointValue(){
@@ -64,6 +64,11 @@ public class Card {
 
     @Override
     public String toString() {
-        return String.format("%s of %s",this.value, this.suit);
+        if (isFaceUp) {
+            return String.format("%s of %s", this.value, this.suit);
+        }
+        else{
+            return "the card is face down";
+        }
     }
 }
